@@ -1,0 +1,12 @@
+#
+# Copyright (c) 2018 HyperHQ Inc.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+ARG IMAGE_REGISTRY=docker.io
+FROM ${IMAGE_REGISTRY}/alpine:3.13.5
+
+RUN apk update && apk add \
+		  bash \
+		  coreutils \
+		  binutils
